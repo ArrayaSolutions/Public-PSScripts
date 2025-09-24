@@ -26,11 +26,11 @@ Requirements
 2) Microsoft Graph PowerShell SDK:
    Install-Module Microsoft.Graph -Scope AllUsers
 3) Delegated permissions for your account:
-   Device.ReadWrite.All, Directory.Read.All (admin consent may be required)
+   "Device.ReadWrite.All", "Directory.AccessAsUser.All" (admin consent may be required)
 
 How to run
 ----------
-Connect-MgGraph -Scopes "Device.ReadWrite.All Directory.Read.All"
+Connect-MgGraph -Scopes "Device.ReadWrite.All", "Directory.AccessAsUser.All"
 
 # Dry run (no deletes), with threshold 20
 .\Remove-StaleDevices-Manual.ps1 -DaysInactive 90 -Threshold 20 -WhatIf

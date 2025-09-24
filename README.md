@@ -54,6 +54,8 @@ Each script specifies the exact scopes or application roles needed.
 - Some scripts include thresholds (e.g., delete only if < 20 objects). You can disable these when you’re confident, but they’re there to prevent accidents.
 - Review the code and adjust for your own environment before running in production.
 
+---
+
 ## Contributing
 - Contributions are welcome! If you have improvements, bug fixes, or new scripts that may help others:
 - Fork the repo
